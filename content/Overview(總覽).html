@@ -1,0 +1,194 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923253 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923253 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='Homework.html'>Homework</a><ul class='dropdown'><li class='has-children'><a href='PCH17.html'>PCH17</a><ul class='dropdown'><li><a href='Notebook Features And Components(筆記本特徵和組件).html'>Notebook Features And Components(筆記本特徵和組件)</a><li><a href='Installing and Configuring Laptop Hardware(安裝和配置筆記本電腦硬件).html'>Installing and Configuring Laptop Hardware(安裝和配置筆記本電腦硬件)</a><li><a href='Notebook Features(筆記本功能).html'>Notebook Features(筆記本功能)</a></li></ul><li class='has-children'><a href='PCH18.html'>PCH18</a><ul class='dropdown'><li><a href='Laptop and Notebook Component Replacement(筆記本電腦和筆記本電腦組件更換).html'>Laptop and Notebook Component Replacement(筆記本電腦和筆記本電腦組件更換)</a><li><a href='Troubleshooting Hard Drives(硬盤驅動器故障排除).html'>Troubleshooting Hard Drives(硬盤驅動器故障排除)</a></li></ul><li class='has-children'><a href='PCH19.html'>PCH19</a><ul class='dropdown'><li><a href='Overview(總覽).html'>Overview(總覽)</a><li><a href='AC Power(交流電).html'>AC Power(交流電)</a><li><a href='Proper Disposal Procedures(正確的處置程序).html'>Proper Disposal Procedures(正確的處置程序)</a><li><a href='Security(安全).html'>Security(安全)</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">PCH19 << <a href='PCH19.html'>Previous</a> <a href='AC Power(交流電).html'>Next</a> >> AC Power(交流電)<br /><h1>Overview(總覽)</h1>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span style="color: #ff0000;"><span style="color: #000000;"><span>In this module on notebooks, we will discuss the various types of batteries used in <br/>notebook and laptop computers, along with battery construction, battery care, and <br/>various power level indicators. We will also discuss the variety of power sources a <br/>notebook has access to, including its battery, AC adapter, and docking stations. <br/>Next, we will discuss the proper disposal procedures that should be used when someone <br/>upgrades or breaks their notebook. Finally, we will discuss the physical security of <br/>notebooks. We will look at the construction of these devices, as well as the proper <br/>installation of the security cable and how it is connected to the notebook.</span> <br/><br/>在筆記本電腦上的該模塊中，我們將討論筆記本電腦和筆記本電腦中使用的各種類型的電池，以及電池結構<br/>，電池維護和各種電量指示器。 我們還將討論筆記本電腦可以使用的各種電源，包括電池，AC適配器和<br/>擴展塢。 接下來，我們將討論當某人升級或損壞筆記本時應使用的正確處置程序。 最後，我們將討論筆<br/>記本的物理安全性。 我們將研究這些設備的結構，安全電纜的正確安裝以及如何將其連接到筆記本計算機。<br/><br/><span style="color: #ff0000;">Battery Types電池類型<br/><br/><span style="color: #000000;">Laptops and notebooks can receive power from several different types of batteries. <br/>The batteries are used to provide direct current (DC) to your notebook, and the <br/>batteries are then recharged by the alternating current (AC) adapter that connects <br/>your notebook to the wall outlet. The AC adapter actually works as a transformer, <br/>converting the wall outlet’s high-voltage AC into low-voltage DC that your notebook <br/>uses to charge its battery.</span></span><br/></span></span></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span style="color: #ff0000;"><span style="color: #000000;">筆記本電腦和筆記本電腦可以通過幾種不同類型的電池供電。 電池用於為筆記本計算機提供直流（DC），<br/>然後通過將筆記本計算機連接至牆上插座的交流（AC）適配器為電池充電。 交流適配器實際上起著變壓器<br/>的作用，將壁裝電源插座的高壓AC轉換為筆記本計算機用來為電池充電的低壓DC。<br/><span class="image"><img alt="Photograph of a battery with half its case removed. The battery cells are exposed. Each cell is a small green cylinder. They are lined up side by side. The edge of the bottom portion of the case has a circuit board and a grey connector." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH19/webcontent/PCH19/image1.png" title="Photograph of a battery with half its case removed. The battery cells are exposed. Each cell is a small green cylinder. They are lined up side by side. The edge of the bottom portion of the case has a circuit board and a grey connector."/></span><span class="caption" lang=""></span></span></span></span></pre>
+<p id="N10686" lang="">Battery cells. Photo used under CC-BY-SA license from<span> Uwe Hermann.</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span>電池芯。 Uwe Hermann根據CC-BY-SA許可使用的照片。<br/><br/>The notebook battery is an enclosed plastic casing with individual battery cells on <br/>the inside, as shown in the images above. Older notebooks used either nickel-cadmium <br/>(NiCd or NiCad) or nickel-metal hydride (NiMH) batteries. These types of batteries <br/>are seldom used in modern notebooks and laptops because they suffered from what is <br/>termed the “memory effect.” Basically, the “memory effect” occurs when a battery <br/>loses its capacity to fully recharge if it is discharged repeatedly the same amount <br/>and then recharged without being fully drained first. For example, if every time your <br/>notebook battery’s charge was at 20 percent you went and recharged it, then 20 <br/>percent charge would become the new zero for your battery, reducing the overall charge<br/>available to only 80 percent of the original capacity.<br/><br/>筆記本電池是一個封閉的塑料外殼，內部裝有單個電池，如上圖所示。 較舊的筆記本電腦使用鎳鎘（NiCd<br/>或NiCad）或鎳氫（NiMH）電池。 這些類型的電池很少用於現代筆記本電腦和筆記本電腦，因為它們遭受了<br/>所謂的“記憶效應”。 基本上，“記憶效應”是指，如果電池反复放電相同量的電量而失去其完全充電的能力<br/>，然後在沒有完全耗盡的情況下進行充電，則會發生“記憶效應”。 例如，如果您每次筆記本電池的電量為<br/>20％時都要去充電，那麼20％的電量將成為電池的新零，從而將總可用電量減少到原始容量的80％。<br/><br/>Both of these battery types were replaced with lithium-ion batteries. The lithium-ion<br/>batteries do not suffer from the memory effect issue. They perform better than other<br/>types of batteries, and are lighter in weight, which increases a notebook’s mobility.<br/>Lithium-ion batteries also feature a rapid-charging option that allows faster <br/>charging when the user is in a hurry. These batteries are more environmentally <br/>friendly than the previous types, as well.<br/><br/>這兩種電池都被鋰離子電池取代。 鋰離子電池不會遭受記憶效應問題。 它們的性能比其他類型的電池更好<br/>，並且重量更輕，從而增加了筆記本的移動性。 鋰離子電池還具有快速充電選項，當用戶急忙時可以更快<br/>地充電。 這些電池也比以前的電池更環保。<br/><br/>To best care for your notebook or laptop, always use the approved battery type for <br/>your model. Using unapproved batteries in your notebook can lead to the notebook <br/>catching fire or exploding. In order to maintain notebook batteries at peak operating<br/>efficiency, keep the batteries at room temperature and avoid heat. If your notebook <br/>has a full charge and is subjected to high temperatures, the longevity of your battery<br/>will decrease. Batteries deteriorate over time, so purchase one with the most recent <br/>manufacturing date for the longest life. Also, getting a higher-capacity battery will <br/>provide a longer battery life on a given charge. Since lithium-ion batteries do not <br/>have a memory effect, it is often better to use partial-discharge cycles for notebooks<br/>and laptops that use those batteries. Note, while there is no memory effect, some <br/>lithium-ion batteries suffer from a “digital memory” that decreases the accuracy of <br/>the power gauge. To recalibrate the power gauge, you need to fully discharge the <br/>battery routinely, such as every few months, then completely recharge it. Lastly, if <br/>you are planning on storing your notebook for a while, it is best to discharge the <br/>battery to about 50 percent first, then store it in a cool, dry place. This will <br/>prolong the life of the battery and prevent you from having to waste money on a <br/>replacement.<br/><br/>為了最好地保護筆記本電腦或筆記本電腦，請始終為您的型號使用認可的電池類型。在筆記本計算機中使用<br/>未經許可的電池可能會導致筆記本計算機著火或爆炸。為了使筆記本電池保持最高工作效率，請將電池保持<br/>在室溫下並避免發熱。如果您的筆記本計算機充滿電並且處於高溫下，則電池的壽命會降低。電池會隨著時<br/>間的流逝而變質，因此請購買製造日期最近的電池以延長使用壽命。同樣，在給定的電量下，使用容量更大<br/>的電池將提供更長的電池壽命。由於鋰離子電池沒有記憶效應，因此對於使用這些電池的筆記本電腦和筆記<br/>本電腦，最好使用部分放電循環。請注意，雖然沒有記憶效應，但某些鋰離子電池會遭受“數字記憶”的困擾<br/>，這會降低功率計的精度。要重新校準功率計，您需要定期（例如每幾個月一次）對電池完全放電，然後將<br/>其完全充電。最後，如果您打算將筆記本電腦存放一段時間，則最好先將電池放電約50％，然後將其存放在<br/>陰涼乾燥的地方。這樣可以延長電池壽命，並避免您在更換電池時浪費金錢。<br/><br/>The amount of battery life is indicated in a number of ways in a notebook, depending <br/>on the computer model. All modern operating systems provide a digital gauge inside <br/>the operating system. This indication can be set by the user to show either the <br/>percentage of battery life remaining (such as 53 percent left), the time remaining <br/>until the battery runs out (such as 1 hour, 43 minutes to empty), or the time to full <br/>charge (such as 34 minutes to full charge). Some models of batteries, though, have a <br/>battery gauge included on the battery itself. This will use a scale, such as five <br/>circles that will light up to show the remaining life of the battery.<br/><br/>根據筆記本計算機的型號，筆記本電腦可以通過多種方式指示電池壽命。 所有現代操作系統都在操作系統內<br/>部提供數字量規。 用戶可以設置此指示以顯示剩餘電池壽命百分比（例如剩餘53％），直到電池用完的剩<br/>餘時間（例如1小時43分鐘用完）或充滿時間 充電（例如充滿電需要34分鐘）。 但是，某些型號的電池在<br/>電池本身中附帶一個電池電量計。 這將使用一個刻度，例如五個圓圈，它將點亮以顯示電池的剩餘壽命。<br/><span class="image"><img alt="Photograph of the bottom of a laptop. A person’s hand is visible and is removing the battery from the bottom of the laptop. The battery is black plastic and rectangular." class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH19/webcontent/PCH19/image2.png" title="Photograph of the bottom of a laptop. A person’s hand is visible and is removing the battery from the bottom of the laptop. The battery is black plastic and rectangular."/></span><span class="caption" lang=""></span></span></span></pre>
+<p id="N106A1" lang="">Laptop battery. Photo used under CC-BY-SA license from<span> Intel Free Press.</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span>筆記本電池。 照片由Intel Free Press根據CC-BY-SA許可使用。<br/></span></span></pre>
+<br />PCH19 << <a href='PCH19.html'>Previous</a> <a href='AC Power(交流電).html'>Next</a> >> AC Power(交流電)</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

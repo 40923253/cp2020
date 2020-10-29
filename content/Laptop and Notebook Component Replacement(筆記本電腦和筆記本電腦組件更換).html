@@ -1,0 +1,215 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923253 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923253 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='Homework.html'>Homework</a><ul class='dropdown'><li class='has-children'><a href='PCH17.html'>PCH17</a><ul class='dropdown'><li><a href='Notebook Features And Components(筆記本特徵和組件).html'>Notebook Features And Components(筆記本特徵和組件)</a><li><a href='Installing and Configuring Laptop Hardware(安裝和配置筆記本電腦硬件).html'>Installing and Configuring Laptop Hardware(安裝和配置筆記本電腦硬件)</a><li><a href='Notebook Features(筆記本功能).html'>Notebook Features(筆記本功能)</a></li></ul><li class='has-children'><a href='PCH18.html'>PCH18</a><ul class='dropdown'><li><a href='Laptop and Notebook Component Replacement(筆記本電腦和筆記本電腦組件更換).html'>Laptop and Notebook Component Replacement(筆記本電腦和筆記本電腦組件更換)</a><li><a href='Troubleshooting Hard Drives(硬盤驅動器故障排除).html'>Troubleshooting Hard Drives(硬盤驅動器故障排除)</a></li></ul><li class='has-children'><a href='PCH19.html'>PCH19</a><ul class='dropdown'><li><a href='Overview(總覽).html'>Overview(總覽)</a><li><a href='AC Power(交流電).html'>AC Power(交流電)</a><li><a href='Proper Disposal Procedures(正確的處置程序).html'>Proper Disposal Procedures(正確的處置程序)</a><li><a href='Security(安全).html'>Security(安全)</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">PCH18 << <a href='PCH18.html'>Previous</a> <a href='Troubleshooting Hard Drives(硬盤驅動器故障排除).html'>Next</a> >> Troubleshooting Hard Drives(硬盤驅動器故障排除)<br /><h1>Laptop and Notebook Component Replacement(筆記本電腦和筆記本電腦組件更換)</h1>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> <span style="color: #ff0000;">Overview總覽<br/><span style="color: #000000;">In this module, we will discuss the types of hard drives used in laptop computers, as<br/>well as how to replace or upgrade them. We will also discuss the types of memory used <br/>in laptop and notebook computers, and the difference between upgrading laptop or <br/>notebook memory and upgrading memory in a standard desktop computer. Lastly, we will <br/>discuss the types of hard drive failure you may experience with a notebook computer <br/>and the best way to identify the failure and repair it properly.<br/>在本模塊中，我們將討論膝上型計算機中使用的硬盤驅動器類型，以及如何更換或升級它們。 我們還將討<br/>論筆記本電腦和筆記本電腦中使用的內存類型，以及升級筆記本電腦或筆記本電腦的內存與升級標準台式<br/>計算機中的內存之間的區別。 最後，我們將討論筆記本計算機可能遇到的硬盤驅動器故障類型，以及識別<br/>故障並正確修復的最佳方法。<br/></span></span></span><span style="color: #ff0000;">Notebook Hard Drives筆記本硬盤<br/><span style="color: #000000;">Laptop storage has evolved over the years from using traditional HDDs, which are very <br/>large and require a lot of power, to using smaller and smaller variants.<br/>多年來，筆記本電腦存儲已經從使用非常大且需要大量電源的傳統HDD到使用越來越小的變體而發展。<br/><span>Similar to the desktop, older generation laptops used IDE/PATA, but current technology<br/>uses SATA connectors, or in the case of mSATA directly plugs into a port on the <br/>motherboard.<br/>與台式機類似，較早的筆記本電腦使用的是IDE / PATA，但當前的技術使用的是SATA連接器，或者在mSAT<br/>A的情況下直接插入主板上的端口。<br/>Whereas traditional desktop computers use a 3.5-inch HDD, laptops typically use a 2.5-<br/>inch hard drive. These drives contain capacity speeds comparable to their larger <br/>counterparts. Smaller notebooks might use an even smaller variant that is only 1.8 <br/>inches in diameter. These drives often operate at similar speeds to their larger <br/>counterparts, but may lack the same capacity for storage. These HDDs make use of a <br/>spinning disk with magnetic storage design.<br/>傳統台式機使用3.5英寸HDD，而筆記本電腦通常使用2.5英寸硬盤。 這些驅動器的容量速度可與大型驅動<br/>器媲美。 較小的筆記本可能會使用直徑甚至只有1.8英寸的甚至更小的變體。 這些驅動器通常以與大型驅<br/>動器相似的速度運行，但可能缺少相同的存儲容量。 這些硬盤使用具有磁存儲設計的旋轉磁盤。<br/>Current laptops, especially netbooks and other laptops that require thinner, lighter, <br/>and faster storage options, use solid-state disks (SSDs) following the 2.5, 1.8, or <br/>mSata form factor. Initially, manufacturers developed a hybrid disk combining an <br/>internal disk with a form of flash storage used to speed up access times. These were <br/>faster than traditional HDDs and much less expensive than a full SSD at the time.<br/>當前的筆記本電腦，尤其是上網本和其他需要更薄，更輕和更快存儲選項的筆記本電腦，使用的固態硬盤（<br/>SSD）遵循2.5、1.8或mSata尺寸規格。 最初，製造商開發了一種混合磁盤，該磁盤將內部磁盤與用於加<br/>速訪問時間的閃存形式結合在一起。 它們比傳統的HDD更快，並且比當時的完整SSD便宜得多。<br/></span></span></span></pre>
+<p id="N106B2" lang="">SSDs contain no actual disk or moving parts. They are highly resistant to shock and movement, and have low latency and high access speeds. The performance of SSDs is far superior to traditional spinning hard disk drives, and they use less power than traditional hard disks, as well, which makes them ideal for mobile applications such as laptops and notebooks. HDD manufacturers have improved the design of SSDs, making them more resilient to I/O writes and reads and less susceptible to the failure first generation SSDs could suffer from if not configured correctly.</p>
+<p lang="">SSD不包含實際的磁盤或活動部件。 它們具有很高的抗衝擊和移動性，並具有低延遲和高訪問速度。 SSD的性能遠遠優於傳統的旋轉硬盤驅動器，並且比傳統的硬盤消耗更少的功率，這使其成為筆記本電腦和筆記本電腦等移動應用程序的理想選擇。 HDD製造商改進了SSD的設計，使其對I / O寫入和讀取的彈性更大，並且如果配置不正確，第一代SSD可能遭受的故障也較不敏感。</p>
+<p id="N106B5" lang="">In addition to traditional SATA or mSATA SSDs, many laptop manufacturers have chosen to incorporate embedded multi-media cards (eMMCs) in smaller 2-in-1 laptops, Chromebooks, or tablets that are designed with a detachable keyboard. eMMCs have faster access times than traditional HDDs, but are slower than an SSD. As the name implies, this storage device is an integrated circuit (IC) chip located on the motherboard. Currently, eMMCs most often come in either 16 GB, 32 GB or 64 GB capacity. Manufacturers most often include a micro secure digital (MicroSD) card reader and USB port to allow for external storage.</p>
+<p lang="">除了傳統的SATA或mSATA SSD之外，許多筆記本電腦製造商還選擇將嵌入式多媒體卡（eMMC）集成到較小的2合1筆記本電腦，Chromebook或配有可拆卸鍵盤的平板電腦中。 eMMC的訪問時間比傳統HDD快，但比SSD慢。 顧名思義，此存儲設備是位於主板上的集成電路（IC）芯片。 當前，eMMC最多具有16 GB，32 GB或64 GB的容量。 製造商最常使用的是微型安全數字（MicroSD）讀卡器和USB端口，用於外部存儲。</p>
+<p lang=""><span>Laptop hard drives and SSDs are generally upgradable and replaceable, but the “internal storage” label for eMMC is not.</span></p>
+<p lang=""><span>筆記本電腦硬盤和固態硬盤通常可以升級和更換，但是eMMC的“內部存儲”標籤卻不是。<br/>Bǐjìběn diànnǎo yìngpán hé gùtài yì</span></p>
+<p lang=""><span>With HDDs and SSDs being standard form factors (2.5-inch or 1.8-inch varieties), they can easily be removed and replaced with a larger capacity or higher speed version as long as the new drive matches in physical size and connection type (SATA or mSATA). To replace a hard drive, the technician simply removes the drive in accordance with the manufacturer’s instructions. It is always important to check with the laptop manufacturer’s instructions on the best way to remove the drive. Some models have a direct access area from the bottom of the laptop, while others require full disassembly of the machine, including the keyboard and casing.</span></p>
+<p lang=""><span>HDD和SSD是標準尺寸（2.5英寸或1.8英寸），只要新驅動器的物理尺寸和連接類型（SATA或SATA）相匹配，就可以輕鬆地將它們卸下並替換為更大容量或更高速的版本。 mSATA）。 要更換硬盤驅動器，技術人員只需按照製造商的說明卸下驅動器。 請務必與筆記本電腦製造商的說明一起查看拆卸驅動器的最佳方法。 某些型號從筆記本電腦的底部可以直接進入，而其他型號則需要完全拆卸機器，包括鍵盤和機殼。</span></p>
+<p lang=""><span><span class="image"><img alt="Photograph of two laptop hard drives. Both are rectangular, but the drive on the right is slightly larger and has a black plastic extension toward the top. There are labels with writing and bar codes on each drive." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH18/webcontent/PCH18/image1.jpeg" title="Photograph of two laptop hard drives. Both are rectangular, but the drive on the right is slightly larger and has a black plastic extension toward the top. There are labels with writing and bar codes on each drive."/></span><span class="caption" lang=""></span></span></p>
+<p id="N106C4" lang="">Laptop hard drives. Photo used under CC-BY license from<span> Ray Dehler.</span></p>
+<p lang=""><span>筆記本電腦硬盤。 由Ray Dehler根據CC-BY許可使用的照片。</span></p>
+<p lang=""><span><span class="image"><img alt="Photograph of an SSD. It is a thin silver rectangle with Intel’s logo on the top. On one end, there is a black plastic slot." class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH18/webcontent/PCH18/image2.jpeg" title="Photograph of an SSD. It is a thin silver rectangle with Intel’s logo on the top. On one end, there is a black plastic slot."/></span><span class="caption" lang=""></span></span></p>
+<p id="N106D3" lang="">SSD. Photo used under CC-BY license from<span> Intel.</span></p>
+<p lang=""><span>SSD。 照片經英特爾CC-BY許可使用</span></p>
+<p lang=""><span style="color: #ff0000;">Memory</span></p>
+<p lang=""><span style="color: #000000;"><span>Laptops use memory modules similar to their larger desktop counterparts. In desktops, DDR, DDR2, and DDR3 RAM modules are used to upgrade our systems, based upon the memory slots provided by the motherboard, and the speed and size accepted by the motherboard. Laptops, similarly, require the proper size and speed modules for their motherboards. Therefore, it is important to check the manufacturer’s manual for a laptop. Laptop memory also comes in DDR, DDR2, and DDR3 varieties, but laptops use the SODIMM (small outline dual in-line memory module) form factor. These are much smaller, more compact versions of the standard DDR, DDR2, and DDR3 modules, but they operate at the same speed and capacity as the larger versions.</span></span></p>
+<p lang=""><span style="color: #000000;">筆記本電腦使用的內存模塊與大型台式機相似。 在台式機中，DDR，DDR2和DDR3 RAM模塊用於根據主板提供的內存插槽以及主板可接受的速度和大小來升級我們的系統。 類似地，筆記本電腦需要適合其主板的尺寸和速度模塊。 因此，請務必查看筆記本電腦的製造商手冊。 筆記本電腦內存還提供DDR，DDR2和DDR3品種，但筆記本電腦使用SODIMM（小尺寸雙列直插式內存模塊）外形。 這些是標準DDR，DDR2和DDR3模塊的更小，更緊湊的版本，但是它們以與較大版本相同的速度和容量運行。</span></p>
+<p lang=""><span style="color: #000000;"><span class="imagewrap"><span class="image"><img alt="Photograph of the bottom of a laptop with an opening in which a rectangular, green SODIMM card is located." class="popimg" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH18/webcontent/PCH18/image3.png" title="Photograph of the bottom of a laptop with an opening in which a rectangular, green SODIMM card is located."/></span><span class="caption" lang=""></span></span></span></p>
+<p id="N106EF" lang="">SODIMM in a laptop. Photo used under CC-BY-NC license from<span> Ben Williams.</span></p>
+<p lang=""><span>筆記本電腦中的SODIMM。 本圖片由Ben Williams根據CC-BY-NC許可使用。</span></p>
+<p lang=""><span>Replacing and upgrading memory is a fairly simply process, similar to replacing memory in a desktop machine. First, remove the power by shutting down the laptop, removing the power cord, and (if possible) removing the battery from the laptop. Next, replace the existing memory module, or add a second one, if applicable. Some laptops, like the one shown above, have a small plastic door covering the memory slots for easy access. Others may require full disassembly to access the memory slots. In a desktop computer, the modules are inserted at a straight-up-and-down vertical angle (90 degrees), but with laptops, the modules are inserted at a 45-degree angle first. Then the modules are pushed down into place once they are fully inserted into the memory slot. This is required due to the space limitations in the laptop.</span></p>
+<p lang=""><span>更換和升級內存是一個相當簡單的過程，類似於在台式機中更換內存。 首先，請關閉筆記本電腦，拔下電源線，並（如果可能）從筆記本電腦中取出電池，以斷開電源。 接下來，更換現有的內存模塊，或添加第二個內存模塊（如果適用）。 某些筆記本電腦，如上圖所示，有一個小的塑料門蓋住內存插槽，以便於使用。 其他可能需要完全拆卸才能訪問內存插槽。 在台式計算機中，模塊以垂直向上和向下的垂直角度（90度）插入，但在筆記本電腦中，模塊首先以45度角插入。 將模塊完全插入內存插槽後，將其向下推入到位。 由於筆記本電腦的空間限制，這是必需的。</span></p>
+<p lang=""><span>Some laptops have a single memory slot, while others have two slots. Some laptops may have their memory soldered onto the motherboard, making upgrading or removing the memory impossible. Always check your laptop’s manual for details on how many modules your laptop will accept (if any), how many gigabytes they can be, and the speed of the modules. For example, in the bottom image below, we see a 2 GB DDR2 memory module that operates at 6400 MBps, or 800 MHz.</span></p>
+<p lang=""><span>一些筆記本電腦只有一個內存插槽，而其他筆記本電腦有兩個插槽。 一些筆記本電腦的內存可能焊接在主板上，因此無法升級或刪除內存。 請始終查看筆記本電腦的手冊，以獲取有關筆記本電腦可以容納多少個模塊（如果有），可以容納多少GB以及模塊速度的詳細信息。 例如，在下面的下圖中，我們看到一個2 GB DDR2內存模塊，其工作頻率為6400 MBps或800 MHz。</span></p>
+<p lang=""><span><span class="imagewrap"><span class="image"><img alt="Photograph of a 2 GB DDR2 memory module. It is a rectangular green card with a label on it. The label has the card specifications and bar codes on it. There are gold pins extending from one side of the card." class="popimg" id="_i_6" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH18/webcontent/PCH18/image4.png" title="Photograph of a 2 GB DDR2 memory module. It is a rectangular green card with a label on it. The label has the card specifications and bar codes on it. There are gold pins extending from one side of the card."/></span><span class="caption" lang=""></span></span></span></p>
+<p id="N10704" lang="">2 GB DDR2 memory module. Photo used under CC-BY-SA license from Cheon Fong Liew.<span></span></p>
+<p lang="">2 GB DDR2內存模塊。 天鳳六照根據CC-BY-SA許可使用的照片。</p>
+<br />PCH18 << <a href='PCH18.html'>Previous</a> <a href='Troubleshooting Hard Drives(硬盤驅動器故障排除).html'>Next</a> >> Troubleshooting Hard Drives(硬盤驅動器故障排除)</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

@@ -137,7 +137,40 @@ img.add_border {
 <div><i>input if types int equality comparison numbers mod</i></div>
 <p>Again, the exercise comes first (with a few extras if you want the extra challenge or want to spend more time), followed by a discussion. Enjoy!</p>
 <p>輸入類型是否為int相等比較數字mod<br/>再次，練習是第一位的（如果您需要額外的挑戰或想要花費更多的時間，還可以進行一些其他操作），然後進行討論。 請享用！</p>
-<p>Exercise 2 (and Solution)練習2（和解決方案）</p>
+<p>Exercise 2 (and Solution)練習2（和解決方案）<br/><span>Ask the user for a number. Depending on whether the number is even or odd, print out an appropriate message to the user. </span><em>Hint: how does an even / odd number react differently when divided by 2?</em></p>
+<p>詢問用戶一個數字。 根據數字是偶數還是奇數，向用戶打印一條適當的消息。 提示：偶數/奇數除以2時的反應如何？</p>
+<p><span>Extras:</span></p>
+<ol>
+<li>If the number is a multiple of 4, print out a different message.</li>
+<li>Ask the user for two numbers: one number to check (call it<span> </span><code class="highlighter-rouge">num</code>) and one number to divide by (<code class="highlighter-rouge">check</code>). If<span> </span><code class="highlighter-rouge">check</code><span> </span>divides evenly into<span> </span><code class="highlighter-rouge">num</code>, tell that to the user. If not, print a different appropriate message.如果數字是4的倍數，請打印出另一條消息。<br/>向用戶詢問兩個數字：一個數字要檢查（稱為num），另一個數字要除以（檢查）。 如果檢查平均分為num，請告知用戶。 如果不是，請打印其他適當的消息</li>
+</ol>
+<p>Discussion討論區</p>
+<p>Concepts for this week:</p>
+<ul>
+<li>Modular arithmetic (the modulus operator)</li>
+<li>Conditionals (if statements)</li>
+<li>Checking equality
+<p>本週的概念：</p>
+<p>模塊化算術（模運算符）<br/>有條件的（如果語句）<br/>檢查平等</p>
+</li>
+</ul>
+<p>Modular arithmetic (the modulus operator)模塊化算術（模運算符）</p>
+<p><span>We have been doing arithmetic (addition, subtraction, multiplication, division) since elementary school, and often it is useful for us to find not the answer to a division problem but the remainder when we do a division operation. This operation is called the “modulus operation.” For example, when I divide 5 by 3, the remainder is 2, and the sentence reads like this: “5 modulo 3 is 2.”</span></p>
+<p><span>從小學開始，我們就一直在進行算術運算（加，減，乘，除），這對於我們尋找除法問題不是答案，而是對除法運算的其餘部分有用。 該操作稱為“模運算”。 例如，當我將5除以3時，餘數為2，句子的內容如下：“ 5模3為2”。</span></p>
+<p><span>In the Python shell:</span></p>
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">%</span> <span class="mi">3</span>
+<span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">6</span> <span class="o">%</span> <span class="mi">3</span>
+<span class="mi">0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">7</span> <span class="o">%</span> <span class="mi">3</span>
+<span class="mi">1<br/><span>The </span><code class="highlighter-rouge">%</code><span><span> </span>sign is exactly the modulus operator.</span>％符號正好是模數運算符。<br/></span></code><br/>Conditionals有條件的<br/><span>When a computer (or a program) needs to decide something, it checks whether some <br/>condition is satisfied, which is where the term </span><strong>conditional</strong><span><span> </span>comes from. Conditionals <br/>are a fancy way of saying “if statements”. If Michele was born in New York, she has <br/>an American passport. That statement is a conditional (if statement) that in this <br/>case is true. In Python this works the same way:<br/>當計算機（或程序）需要做出決定時，它會檢查是否滿足某些條件，這就是條件一詞的來源。 條件語句是<br/>說“ if語句”的一種奇特的方式。 如果米歇爾（Michele）出生於紐約，則她擁有美國護照。 該語句是在<br/>這種情況下為真的條件（如果語句）。 在Python中，這是相同的方式：<br/></span></pre>
+<pre><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">17</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"can see a rated R movie"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">17</span> <span class="ow">and</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">12</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"can see a rated PG-13 movie"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"can only see rated PG movies"</span><span class="p">)<br/><span>When the program gets to the </span><code class="highlighter-rouge">if</code><span><span> </span>statement, it will check the value of the variable <br/>called<span> </span></span><code class="highlighter-rouge">age</code><span><span> </span>against all of the conditions, in order, and will print something to the <br/>screen accordingly. Note that<span> </span></span><code class="highlighter-rouge">elif</code><span><span> </span>is a portmanteau of “else” and “if”. So if the <br/>variable<span> </span></span><code class="highlighter-rouge">age</code><span><span> </span>holds the value 15, the statement<span> </span></span><code class="highlighter-rouge">"can see a rated PG-13 movie"</code><span><span> </span>will <br/>be printed to the screen.<br/>當程序進入if語句時，它將按所有條件依次檢查稱為age的變量的值，並將相應內容打印到屏幕上。 注意，<br/>elif是“ else”和“ if”的組合。 因此，如果變量age的值保持為15，則“可以看到額定的PG-13電影”語句<br/>將顯示在屏幕上。</span></span></code></pre>
+<pre><span></span><br/><br/><br/></pre>
 <p></p>
 <pre><span><span></span></span></pre>
 <p></p>

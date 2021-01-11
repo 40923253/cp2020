@@ -1,4 +1,4 @@
-<h1>Homework</h1>
+<h1>Homework1</h1>
 <p></p>
 <h2>PCH17</h2>
 <h3>Notebook Features And Components(筆記本特徵和組件)</h3>
@@ -145,9 +145,57 @@
 <p lang=""><span><span class="image"><img alt="Photograph of a laptop lock. It is a silver, cylindrical device protruding from the side of a laptop near where the screen and the keyboard join. The device has a combination feature with four numbers." class="popimg" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH19/webcontent/PCH19/image10.png" title="Photograph of a laptop lock. It is a silver, cylindrical device protruding from the side of a laptop near where the screen and the keyboard join. The device has a combination feature with four numbers."/></span><span class="caption" lang=""></span></span></p>
 <p id="N106B1" lang="">Laptop lock. Photo used under CC-BY-SA license from  Seth Werkheiser.</p>
 <p lang="">筆記本電腦鎖。 照片由Seth Werkheiser根據CC-BY-SA許可使用。</p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW" style="color: #000000;"> </span></pre>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
+<h1>homework2</h1>
+<p>import urllib.request<br/>target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"<br/>cp1b = []<br/>for line in urllib.request.urlopen(target_url):<br/>    cp1b.append(line.decode('utf-8'))<br/>print(cp1b)</p>
+<p><span>&gt;&gt;&gt;</span>['40523138\n', '40523148\n', '40723217\n', '40728238\n', '40823148\n', '40823152\n', '40923201\n', '40923202\n', '40923203\n', '40923204\n', '40923205\n', '40923206\n', '40923207\n', '40923208\n', '40923209\n', '40923210\n', '40923211\n', '40923212\n', '40923213\n', '40923214\n', '40923216\n', '40923217\n', '40923218\n', '40923219\n', '40923220\n', '40923221\n', '40923223\n', '40923224\n', '40923225\n', '40923226\n', '40923227\n', '40923228\n', '40923229\n', '40923230\n', '40923231\n', '40923232\n', '40923233\n', '40923234\n', '40923235\n', '40923236\n', '40923237\n', '40923238\n', '40923239\n', '40923240\n', '40923241\n', '40923242\n', '40923243\n', '40923244\n', '40923245\n', '40923246\n', '40923247\n', '40923248\n', '40923249\n', '40923250\n', '40923251\n', '40923252\n', '40923253\n']</p>
+<hr/>
+<p>import urllib.request<br/>target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"<br/>cp1b = []<br/>for line in urllib.request.urlopen(target_url):<br/>    cp1b.append(int(line.decode('utf-8').rstrip())) <br/>print(cp1b)</p>
+<p><span>&gt;&gt;</span><span><span>&gt;</span>[40523138, 40523148, 40723217, 40728238, 40823148, 40823152, 40923201, 40923202, 40923203, 40923204, 40923205, 40923206, 40923207, 40923208, 40923209, 40923210, 40923211, 40923212, 40923213, 40923214, 40923216, 40923217, 40923218, 40923219, 40923220, 40923221, 40923223, 40923224, 40923225, 40923226, 40923227, 40923228, 40923229, 40923230, 40923231, 40923232, 40923233, 40923234, 40923235, 40923236, 40923237, 40923238, 40923239, 40923240, 40923241, 40923242, 40923243, 40923244, 40923245, 40923246, 40923247, 40923248, 40923249, 40923250, 40923251, 40923252, 40923253]</span></p>
+<h1>homework3</h1>
+<br/><br/>1<span>Character Input</span><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/>
+<p>Calibrating the exercises to the audience is going to be a challenging task, so I ask you to bear with me if the exercises are too easy or too hard. Every week there will be a poll you can click on to discuss whether the exercise is too easy or too hard and hopefully in a few weeks, I’ll get the level right. Let’s get to it! I will start with the exercise and include a discussion later, in case you want the extra challenge.</p>
+<p>向觀眾校準練習將是一項艱鉅的任務，因此，我請您忍受練習是否太容易或太難。 每週都會進行一次民意測驗，您可以單擊以討論該練習是太容易還是太難了，希望在幾週後，我會把水平調到正確的水平。 讓我們開始吧！ 如果您需要額外的挑戰，我將從練習開始，並在以後進行討論。</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
+<h3 id="exercise-1-and-solution">Exercise 1 (and Solution)練習1（和解決方案）</h3>
+<p><span>Create a program that asks the user to enter their name and their age. Print out a message addressed to them that tells them the year that they will turn 100 years old.</span></p>
+<p><span>創建一個程序，要求用戶輸入他們的姓名和年齡。 打印給他們的消息，告訴他們他們將滿100歲的年份。</span></p>
+<p><span>Extras附加功能:</span></p>
+<ol>
+<li>Add on to the previous program by asking the user for another number and printing out that many copies of the previous message. (<em>Hint:<span> </span><a href="http://www.mathsisfun.com/operation-order-pemdas.html">order of operations</a><span> </span>exists in Python</em>)通過詢問用戶另一個號碼並打印出先前消息的許多副本來添加到先前的程序中。 （提示：Python中存在操作順序）</li>
+<li>Print out that many copies of the previous message on separate lines. (<em>Hint: the string<span> </span><code class="highlighter-rouge">"\n</code><span> </span>is the same as pressing the ENTER button</em>)在單獨的行上打印出先前消息的許多副本。 （提示：字符串“ \ n與按ENTER按鈕相同）</li>
+</ol>
+<p>Discussion討論區:</p>
+<p><span>Concepts for this week</span>本週的概念</p>
+<ul>
+<li>Getting user input獲取用戶輸入</li>
+<li>Manipulating strings (a few ways)處理字符串（幾種方法）</li>
+</ul>
+<p>User input in Python使用Python的用戶輸入:</p>
+<p><span>To get user input in Python (3), the command you use is </span><a href="http://docs.python.org/3.3/library/functions.html?highlight=input#input"><code class="highlighter-rouge">input()</code></a><span>. Store the result in a variable, and use it to your heart’s content. Remember that the result you get from the user will be a string, even if they enter a number.</span>為了在Python（3）中獲得用戶輸入，您使用的命令是input（）。 將結果存儲在變量中，並將其用於您的內心。 請記住，即使用戶輸入數字，您從用戶那裡得到的結果也將是字符串。</p>
+<p><span>For example例如</span></p>
+<pre><code class="language-python" data-lang="python"><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Give me your name: "</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Your name is "</span> <span class="o">+</span> <span class="n">name</span><span class="p">)<br/><br/><span>What this will print in the terminal (or the shell, whatever you are running Python in)<br/>will be:這將在終端（或外殼，無論您在其中運行Python的什麼）中顯示的內容是：<br/></span></span></code><br/>從input（）函數得到的是一個字符串。 你能做什麼呢？<br/>Manipulating strings (a few ways)處理字符串（幾種方法）<br/><span>What you get from the </span><code class="highlighter-rouge">input()</code><span><span> </span>function is a string. What can you do with it?<br/><br/>First: Make the string into a number. Let’s say you are 100% positive that the user <br/>entered a number. You can turn the string into an integer with the function <a href="http://docs.python.org/3.3/library/functions.html#int"><code class="highlighter-rouge">int()</code></a><span>. <br/>(In a later exercise or two or three there will be questions about what to do when <br/>the user does NOT enter a number and you try to do this; for now don’t worry about <br/>that problem). Here is what this looks like:<br/>第一：將字符串變成數字。 假設您100％肯定用戶輸入了數字。 您可以使用函數int（）將字符串轉換為整<br/>數。 （在以後的一兩三個練習中，當用戶不輸入數字而您嘗試這樣做時，將會出現關於如何處理的問題；<br/>現在不必擔心該問題）。 看起來像這樣：<br/></span></span></pre>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your age: "</span><span class="p">)</span>
+<span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span></code></pre>
+</figure>
+<p>(or, if you want to be more compact with your code)</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter your age: "</span><span class="p">))<br/></span></code><br/><br/></pre>
+</figure>
+<p>In both cases,<span> </span><code class="highlighter-rouge">age</code><span> </span>will hold a variable that is an integer, and now you can do math with it.</p>
+<p>(Note, you can also turn integers into strings exactly in the opposite way, using the<span> </span><a href="http://docs.python.org/3.3/library/functions.html#str"><code class="highlighter-rouge">str()</code></a><span> </span>function)</p>
+<p>Second: Do math with strings. What do I mean by that? I mean, if I want to combine (<strong>concatenate</strong><span> </span>is the computer science word for this) strings, all I need to do is add them:</p>
+<p>在這兩種情況下，age都將保留一個整數變量，現在您可以使用它進行數學運算。</p>
+<p>（注意，您也可以使用str（）函數以相反的方式將整數轉換為字符串）</p>
+<p>第二：對字符串進行數學運算。 那是什麼意思 我的意思是，如果我想組合（連接起來是計算機科學這個詞）字符串，我要做的就是添加它們：</p>
+<p><span>but division and subtraction do not work like this. In terms of multiplication, the idea of multiplyling two strings together is not well-defined. What does it mean to multiply two strings in the first place? However, it makes sense in a way to specify multiplying a string by a number - just repeat that string that number of times. Try this in your own program with all the arithmetic operations with numbers and strings - the best way to get a feel for what works and what doesn’t is to try it!</span></p>
+<p><span>但是除法和減法不是這樣的。 就乘法而言，將兩個字符串相乘的想法尚不明確。 首先將兩個字符串相乘是什麼意思？ 但是，以某種方式指定將字符串乘以數字是有意義的-只需將該字符串重複該次數即可。 在您自己的程序中嘗試使用帶有數字和字符串的所有算術運算，嘗試一下什麼是可行的，無效的最佳方法！</span></p>
+<h2 id="happy-coding">Happy coding!祝您編碼愉快！</h2>
+<pre><span><span></span></span></pre>
+<p></p>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/></span></pre>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW" style="color: #000000;"></span></pre>
 <p></p>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
+<p></p>
